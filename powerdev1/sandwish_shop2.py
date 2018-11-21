@@ -1,3 +1,8 @@
+"""
+
+This is a test module for Pycharm projects
+
+"""
 import math
 
 
@@ -13,18 +18,18 @@ class Calculator:
         """
         self.my_cost = my_cost
 
-    def markup(self, rt):
+    def markup(self, rt_value):
         """ markup the item
 
         Keyword arguments:
-        rt -- the cost to be executed (default 0.0)
+        rt_value -- the cost to be executed (default 0.0)
 
 
 
         :returns
         int - return value
         """
-        mark = math.sqrt(rt)
+        mark = math.sqrt(rt_value)
         return self.my_cost * mark
 
     @property
@@ -40,9 +45,9 @@ class Calculator:
         return mark
 
 
-my_cost2 = sum([1.00*2, 1.50, 0.66])
-menu = Calculator(my_cost2)
+MY_COST_VALUE = sum([1.00*2, 1.50, 0.66])
+MENU_INSTANCE = Calculator(MY_COST_VALUE)
 
-charge = menu.family
+CHARGE_NUMBER = MENU_INSTANCE.family
 # charge = menu.markup(4)
-print("PB&J costs : {}".format(str(charge)))
+print("PB&J costs : {}".format(str(CHARGE_NUMBER)))
