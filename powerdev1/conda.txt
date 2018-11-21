@@ -1,0 +1,14 @@
+
+
+Anthonys-MacBook-Pro:pythoncentral mcclayac$
+conda info --env
+# conda environments:
+#
+base                  *  /anaconda3
+
+conda list
+
+conda --version
+conda 4.4.10
+
+

@@ -1,0 +1,10 @@
+
+
+pip install pylint
+
+
+pylint mandlebrotSet.py
+
+
+pylint mandlebrotSet.py --reports=y
+
